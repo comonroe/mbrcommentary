@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'e2df6351-f62d-45f1-808b-e5602b3a59c5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['opsfin.azurewebsites.net', 'localhost']
 
@@ -81,7 +81,21 @@ WSGI_APPLICATION = 'MBRCommentary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'OpsFinMBRCommentary',
+        'USER': 'webapp',
+        'PASSWORD': 'Yukon900',
+        'HOST': 'opsfin-mbr-commentary.database.windows.net',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'SQL Server Native Client 11.0',
+            'MARS_Connection': 'True',
+            'connection_timeout': 30
+            }
+    }
+} 
 
 
 # Password validation
