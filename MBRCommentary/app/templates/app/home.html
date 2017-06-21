@@ -1,0 +1,19 @@
+{% extends 'app/layout.html' %}
+{% load render_table from django_tables2 %}
+{% load bootstrap_toolkit %}
+
+{% block content %}
+    <div class="main" role="main"> 
+        <div class="clearfix"></div>
+        <h3>COGS</h3>
+        <table class="table table-bordered table-striped table-hover">
+            {% render_table table %}
+        </table>
+    </div>
+    <div class="main" role="main"> 
+         <h3>OPEX</h3>
+        <table class="table table-bordered table-striped table-hover">
+            {% render_table table2 %}
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'app/layout.html' %}
+{% load render_table from django_tables2 %}
+{% load bootstrap %}
+
+{% block content %}    
+    <div class="main" role="main">
+        <div class="x_title">
+            <h3 style="text-align:center">{{title}}</h3>
+            <table class="table table-bordered table-striped table-hover">
+                {% render_table table %}
+            </table>
+        </div>
+    </div>
+    <div class="main" role="main">
+      <div class="row">
+        <div class="col-md-12">
+          <form method="POST" class="post-form" novalidate="novalidate">{% csrf_token %}
+              {{ form | bootstrap_horizontal }}
+              <button type="submit" class="save btn btn-success" onclick="this.disabled=true,this.form.submit();">Save</button>    
+              <button type="submit" class="save btn btn-default"><a href="{% url 'home'%}">Cancel</a></button>    
+            </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}    
+
+

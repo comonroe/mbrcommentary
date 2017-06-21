@@ -1,0 +1,241 @@
+﻿.main, .nav {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.table-container th.asc:after {
+    content: '\0000a0\0025b2';
+    float: right;
+}
+.table-container th.desc:after {
+    content: '\0000a0\0025bc';
+    float: right;
+}
+
+.col-md-12, .col-sm-12, .col-xs-12 {
+    padding: 0px;
+}
+
+.title_left {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.page-title .title_left {
+    width: 100%;
+}
+
+.logout {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+}
+
+.logout2 {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+.indent {
+    margin-left: 20px;
+}
+.plus {
+    margin-left: 60px;
+}
+.powerbi-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.title-bar {
+    margin-left: 82px;
+}
+
+form {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+    form > button {
+        float: right;
+        margin-top: 20px;
+    }
+
+    form > div > div {
+        margin-bottom: 10px;
+    }
+
+.filter {
+    float: right;
+}
+/* edit icons */
+span.glyphicon-pencil.hover-toggle {
+    visibility: hidden;
+}
+
+    a:hover > span.glyphicon-pencil {
+        visibility: visible;
+    }
+
+/* table coloring */
+.x_panel {
+    border-width: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.x_title {
+    border: 0px;
+    padding-bottom: 0px;
+}
+
+    .x_title > h3 {
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+    }
+
+    .x_title span {
+        color: #73879C;
+    }
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 0px;
+    margin-bottom: 0px;
+} 
+
+tr {
+    border-bottom: 1px solid #E6E9ED;
+}
+
+thead tr {
+    border: 0px;
+    white-space: nowrap;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.showlink{
+    color: #05668d;
+    text-decoration: underline;
+}
+
+table.organizations-table > thead > tr, .organizations-form-title {
+    color: white;
+    background-color: #05668d;
+}
+
+table.applications-table > thead > tr, .applications-form-title {
+    color: white;
+    background-color: #028090;
+}
+
+table.contacts-table > thead > tr, .contacts-form-title {
+    color: white;
+    background-color: #00a896;
+}
+
+table.notes-table > thead > tr, .notes-form-title {
+    color: white;
+    background-color: #02c39a;
+}
+
+
+/* icons inside tables */
+td span.glyphicon.glyphicon-ok, td span.glyphicon.glyphicon-alert {
+    font-size: 16px;
+    text-align: center;
+    width:100%;
+}
+
+.True {
+    font-weight: bold;
+    color: #37BC9B;
+}
+
+.False {
+    font-weight: bold;
+    color: #DA4453;
+}
+
+/* login screen */
+.login {
+    background-color: white;
+}
+form.login {
+    margin: 0px;
+}
+
+table.login {
+    width: 100%;
+}
+
+table.login > * > tr {
+    border: 0px;
+}
+
+table.login > * > tr > td {
+    padding-bottom: 10px;
+}
+
+
+select[multiple], select[size] {
+    height: 300px;
+}
+
+/* drop down menu*/
+.dropdown ul {
+    background: #E7E7E7;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.dropdown li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 33%;
+}
+.dropdown a {
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.dropdown .dropdown:after {
+    content: ' \25bc';
+}
+
+.dropdown li ul {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.dropdown li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+.dropdown li ul li {
+    width: 100%;
+}
+.dropdown li ul a:hover{ 
+    background: #bbb;
+}
